@@ -9,11 +9,14 @@ ul {
   list-style-type: circle;
   list-style-position: inside;
   padding-left: 1dvb;
+  margin-left: 1cqmin;
 }
 
 ol  {
   list-style-type: numbers;
   list-style-position: inside;
-  padding-left: 1dvb;
+  padding-right: 10px;
+  margin-right: 25px;
+  box-sizing: content-box;
 
 }
