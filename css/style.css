@@ -8,11 +8,12 @@ font-size: 6vw;
 ul {
   list-style-type: circle;
   list-style-position: inside;
-  
+  padding-left: 1dvb;
 }
 
 ol  {
   list-style-type: numbers;
   list-style-position: inside;
+  padding-left: 1dvb;
 
 }
