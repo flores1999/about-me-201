@@ -55,7 +55,7 @@ if(q5 === 'yes' || q5 === 'y'){
 
 
 let age = 24;
-let attempts = 6;
+let attempts = 4;
 let guessedCorrectly = false;
 while (attempts > 0 && !guessedCorrectly) {
   let guess = prompt("Guess my age:");
