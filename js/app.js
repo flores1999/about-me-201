@@ -8,15 +8,17 @@ console.log('username');
 let correctcount = 0;
 
 
-let q1 = prompt('Am I a dog person? yes/no or y/n').toLowerCase();
-if(q1 === 'yes'|| q1 === 'y' ){
-  alert('Yes I am');
-  correctcount += 1;
+function q1()
+{
+  let q1 = prompt('Am I a dog person? yes/no or y/n').toLowerCase();
+  if(q1 === 'yes'|| q1 === 'y' ){
+    alert('Yes I am');
+    correctcount += 1;
 
-} else if(q1 ==='no' || q1 === 'n'){
-  alert('Wrong I am a dog fan');
+  } else if(q1 ==='no' || q1 === 'n'){
+    alert('Wrong I am a dog fan');
+  }
 }
-
 
 let q2 = prompt('Is red my favorite color? yes/no or y/n').toLowerCase();
 if(q1 === 'yes' || q2 === 'y'){
