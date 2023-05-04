@@ -13,7 +13,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-![lighthouse score](lh-01.png) 
+![lighthouse score ](lh-02.png) 
 
 ### Reflections and Comments
 
