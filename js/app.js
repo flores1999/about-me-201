@@ -93,27 +93,33 @@ q6a();
 
 
 function q7a(){
-  let guesses = 5;
-  let answers = ['chicken', 'sushi', 'dumplings'];
+  let guesses = 6;
+  const answers = ['chicken', 'sushi', 'dumplings'];
   while(guesses > 0) {
-    let response = prompt('Guess my one of my top 3 favorite foods? you have 6 guesses');
+    let response = prompt(`Guess one of my top 3 favorite foods? You have ${guesses} guesses left`);
+    if(response){
+      response = response.toLowerCase();
+    }
     let correctGuess = false;
     for(let i = 0; i < answers.length; i++) {
       if(response === answers[i]) {
         alert('Nice! you figured out one of my favorite foods');
         correctGuess = true;
         correctcount += 1;
+        break;
       }
     }
     if (!correctGuess) {
-      alert(`That is wrong! you have ${guesses} left`);
       guesses--;
+      if(guesses > 0){
+        alert(`That is wrong! you have ${guesses} guesses left`);
+      }
     } else {
       break;
     }
   }
-  if (guesses === 0) {
-    alert(`You are out of guesses. my top 3 are ${answers}` );
+  if (guesses === 0 && !correctGuess) {
+    alert(`You are out of guesses. my top 3 are ${answers.join(', ')}` );
   }
 }
 q7a();
